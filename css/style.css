@@ -1,0 +1,586 @@
+@charset "UTF-8"
+
+/*　共通部分
+--------------------*/
+    
+html{
+    font-size: 100%; 
+    scroll-behavior: smooth;
+}
+
+
+.fadein {
+  opacity : 0;
+  transform : translate(0, 100px);
+  transition : all 1s;
+}
+ 
+.fadein.active{
+  opacity : 1;
+  transform : translate(0, 0);
+}
+
+
+body{
+    font-family: "ヒラギノ明朝 ProN W3","ヒラギノ明朝 Pro W3";
+    line-height: 1.7;
+    color: #ffffff;
+    background-color: #131516;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+li a{
+    text-decoration: none;
+    font-family:"Bebas Kai";
+    font-size: 20px;
+}
+
+li img{
+    width: 17px;
+    
+}
+img{
+    max-width: 100%;
+}
+
+#img-wrap {
+    position: relative;
+}
+
+.pc { display: block !important; }
+.sp { display: none !important; }
+
+#img-wrap img {
+    max-width:80%;
+    margin-left: 20%;
+    position: absolute;    
+}
+
+/*　HEADER
+--------------------*/
+h1 a{
+    font-size: 20px;
+    font-family:"Bebas Kai";
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+}
+
+.page-header{
+    position:relative;
+    display: flex;
+    width: 100%; 
+    justify-content: space-between;
+    margin:30px 0;
+    padding:0 30px;
+}
+
+
+
+
+a:hover{
+    opacity:0.3;
+    transition:all 0.8s;
+} 
+
+
+header{
+    height: 2px;
+}
+
+
+.main-nav{
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+
+.main-nav li{
+    margin-left: 20px;
+    
+}
+
+.main-nav a{
+    color:#fcfbfb;
+}
+
+
+h3{
+    font-family:"Bebas Kai";
+    color: #d26d0a;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    letter-spacing: 15px;
+    text-align: center;
+}
+
+
+.title{
+    margin-top: 20%;
+    margin-left: 5%; 
+    position: relative;
+}
+h2{
+    font-size: 85px;
+    letter-spacing: 30px;
+    font-family:"Bebas Kai";
+}
+.title p{
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+
+.concept{
+    text-align: center;
+    margin-top: 30%;
+}
+
+.concept p{
+    line-height: 40px;
+    letter-spacing: 5px;
+}
+
+
+/*　SERVICE
+--------------------*/
+.servicelist{
+    display: flex;
+}
+
+.beerfood{
+    position: relative;
+}
+
+.beerfood p{
+    position: absolute;/*絶対配置*/
+    color: white;/*文字は白に*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family:"Bebas Kai";
+    font-size: 50px;
+    letter-spacing: 8px;
+    text-align: center;
+  }
+
+.music{
+    position: relative;
+}
+
+.music p{
+    position: absolute;/*絶対配置*/
+    color: white;/*文字は白に*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family:"Bebas Kai";
+    font-size: 50px;
+    letter-spacing: 8px;
+  }
+
+
+/*　NEWS
+--------------------*/
+
+.newslist{
+    margin: 0 auto;
+    width: 60%;
+}
+
+.list{
+    display: block;
+    background: aliceblue;
+    margin: 0 0 15px;
+    padding: 10px 0 10px 10%;
+    margin: 0 0 15px;
+}
+
+.list p{
+    display: inline-block;
+}
+
+.day{
+    width: 30%;
+}
+
+.newslist a{
+    text-decoration: none;
+    color: #131516;
+    
+}
+
+.newslist a:hover{
+    background: #d26d0a;
+    color: #ffffff;
+    opacity:1;
+    transition:all 0.5s;
+} 
+
+/*　ACCESS
+--------------------*/
+
+#location .wrapper{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 4%;
+}
+
+
+.location-info p{
+    display: inline-block;
+}
+.map{
+    width: 80%;
+}
+
+iframe{
+    width: 100%;
+}
+
+
+
+
+
+
+.pagetop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+}
+.pagetop a {
+    display: block;
+    background-color: #fff;
+    text-align: center;
+    color: #222;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 5px 10px;
+	filter:alpha(opacity=50);
+    opacity: 0.8;
+}
+.pagetop a:hover {
+    display: block;
+    background-color: #131516;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    padding:5px 10px;
+	filter:alpha(opacity=50);
+    opacity: 0.8;
+}
+
+
+/*　FOOTER
+--------------------*/
+
+footer{
+    background:#fefefe; 
+    padding:25px 0;
+    margin-top: 100px;
+    color:#2d2a2a ;
+    
+}
+
+footer h2{
+    color:#2d2a2a ;
+    font-size: 14px;
+    font-family: "ヒラギノ明朝 ProN W3","ヒラギノ明朝 Pro W3";
+    letter-spacing: 7px;
+}
+
+.container{
+    display: flex;
+    padding: 10px 220px;
+    justify-content: space-around;
+}
+
+.name h1{
+    font-size: 20px;
+    font-family:"Bebas Kai";
+}
+
+.number{
+    border-width: 1px;
+    border-style: solid;
+    border-color: color:#2d2a2a ;
+    padding: 0px 30px;
+    padding-top: 8px;
+    line-height: 35px;
+    align-items: center;
+}
+
+.number a{
+    text-decoration: none;
+    color:#2d2a2a ;
+    font-size: 23px;
+}
+
+.time{
+    line-height: 40px;
+}
+
+.time h2{
+    margin-right: 30px;
+}
+
+.time-1{
+    display: flex;
+}
+
+.holiday{
+    display: flex;
+}
+
+.wrapper p{
+    text-align: center;
+}
+
+
+
+
+
+
+/*　レスポンシブ
+--------------------*/
+
+@media(max-width:1000px){
+    
+.container{
+    flex-direction: column;
+    padding: 10px 220px;
+    justify-content: space-around;
+}    
+    
+.name h1{
+    font-size: 20px;
+    font-family:"Bebas Kai";
+    margin-bottom: 20px;
+}
+
+.number{
+    text-align: center;
+}
+
+    
+.time{
+    line-height: 40px;
+    margin-top: 20px;
+}
+    
+}
+
+
+
+
+/*　レスポンシブ
+--------------------*/
+
+@media(max-width:750px){
+    
+/*　ハンバーガー
+--------------------*/
+    .hamburger {
+  display : block;
+  position: fixed;
+  z-index : 3;
+  right : 13px;
+  top   : 12px;
+  width : 42px;
+  height: 42px;
+  cursor: pointer;
+  text-align: center;
+}
+.hamburger span {
+  display : block;
+  position: absolute;
+  width   : 30px;
+  height  : 2px ;
+  left    : 6px;
+  background : #555;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition   : 0.3s ease-in-out;
+  transition        : 0.3s ease-in-out;
+}
+.hamburger span:nth-child(1) {
+  top: 10px;
+}
+.hamburger span:nth-child(2) {
+  top: 20px;
+}
+.hamburger span:nth-child(3) {
+  top: 30px;
+}
+
+/* ナビ開いてる時のボタン */
+.hamburger.active span{
+  background :#fff;
+}
+.hamburger.active span:nth-child(1) {
+  -webkit-transform: translateY(6px);
+  -moz-transform   : translateY(6px);
+  transform        : translateY(6px);
+}
+.hamburger.active span:nth-child(2){
+-webkit-transform: translateY(-4px);
+  -moz-transform   : translateY(-4px);
+  transform        : translateY(-4px);
+}  
+
+.hamburger.active span:nth-child(3) {
+  -webkit-transform: translateY(-14px);
+  -moz-transform   : translateY(-14px);
+  transform        : translateY(-14px);
+}
+
+nav{
+  position: fixed;
+  z-index : 2;
+  top  : 0;
+  left : 0;
+  color: #fff;
+  background: rgba(0,0,0,0.7);
+  text-align: center;
+  width: 50%;
+    margin-left: 50%;
+  opacity: 0;
+  transition: opacity .6s ease, visibility .6s ease;
+}
+
+nav ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding:auto;
+  width: 100%;
+  transition: .4s all;
+}
+nav ul li:last-child {
+  padding-bottom: 0;
+}
+nav ul li:hover{
+  background :#ddd;
+
+}
+
+nav ul li a {
+  display:block;
+  color: #fff;
+  padding: 1em 0;
+  text-decoration :none;
+}
+
+nav ul li a:hover {
+    color: #131516;
+    }
+    
+.main-nav{
+    flex-direction: column;
+    }
+    
+/* このクラスを、jQueryで付与・削除する */
+nav.active {
+  opacity: 100;
+
+}
+    
+    
+
+    
+/*　SERVICE
+--------------------*/    
+.servicelist{
+    flex-direction: column;
+    }
+    
+/*　NEWS
+--------------------*/  
+
+.day{
+    width: 35%;
+}
+
+/*　MAP
+--------------------*/ 
+    
+#location .wrapper{
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 0 4%;
+}
+
+.map{
+    margin-top: 20px;
+    width: 100%;
+}
+
+    
+.container{
+    flex-direction: column;
+    padding: 10px 100px;
+    justify-content: space-around;
+}    
+    
+.name h1{
+    font-size: 20px;
+    font-family:"Bebas Kai";
+    margin-bottom: 20px;
+}
+
+.number{ 
+   
+}
+
+.time{
+    line-height: 40px;
+    margin-top: 20px;
+}
+    
+
+
+@media(max-width:600px){
+/*　ヘッダー
+--------------------*/  
+.pc { display: none !important; }
+.sp { display: block !important; }
+    
+
+#img-wrap img {
+    max-width:100%;
+    height:auto;
+    margin-left: 0%;
+    position: absolute;    
+}
+    
+    
+.title{
+    margin-top: 60%;
+    text-align: center; 
+    position: relative;
+    margin-bottom: 80%;
+}
+h2{
+    font-size: 85px;
+    letter-spacing: 30px;
+    font-family:"Bebas Kai";
+}
+.title p{
+    font-size: 17px;
+    letter-spacing: 5px;
+}
+
+    
+}
